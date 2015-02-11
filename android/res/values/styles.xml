@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="colorPrimary">@color/blue</item>-->
+        <!--<item name="colorPrimaryDark">@color/dark_blue</item>-->
+        <!--<item name="colorAccent">@color/dark_blue</item>-->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+    <!--</style>-->
+
+    <!--<style name="ToolbarStyle">-->
+        <!--<item name="android:textColor">#ffffff</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="colorPrimary">@color/blue</item>-->
+        <!--<item name="colorPrimaryDark">@color/dark_blue</item>-->
+        <!--<item name="colorAccent">@color/dark_blue</item>-->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar" />
+
+<color name="AccentColor">#cc0000</color>
+<color name="PopupColor">@color/AccentColor</color>
+<color name="PopupTextColor">#ffffff</color>
+<color name="ButtonTextColor">#ffffff</color>
+<color name="BlurbColor">#a0a0a0</color>
+<color name="SignOutButtonBackground">#e0e0e0</color>
+<color name="SignOutButtonTextColor">#404040</color>
+
+<dimen name="TitleSize">20sp</dimen>
+
+    <style name="MainScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MainScreenButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BottomAnimImageview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="SignInButton" parent="@style/MainScreenButton">
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="SignOutButton" parent="@style/MainScreenButton">
+        <item name="android:background">@color/SignOutButtonBackground</item>
+        <item name="android:textColor">@color/SignOutButtonTextColor</item>
+    </style>
+
+
+    <style name="InvPopup" parent="@style/MainScreen">
+    <item name="android:background">@color/blue</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:layout_gravity">top|right</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:orientation">horizontal</item>
+</style>
+
+<style name="GameTitle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:text">@string/game_title</item>
+    <item name="android:textColor">@color/blue</item>
+    <item name="android:textSize">@dimen/TitleSize</item>
+    <item name="android:layout_marginBottom">40dp</item>
+</style>
+
+<style name="Blurb">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/BlurbColor</item>
+</style>
+
+<style name="GameBlurb" parent="@style/Blurb">
+    <item name="android:text">@string/game_blurb</item>
+    <item name="android:layout_marginBottom">40dp</item>
+</style>
+
+<style name="MainScreenButtonBlurb" parent="@style/GameBlurb">
+    <item name="android:layout_marginBottom">20dp</item>
+</style>
+
+<style name="InvPopupText">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textColor">@color/PopupTextColor</item>
+    <item name="android:text">@string/inv_popup_text</item>
+    <item name="android:gravity">center</item>
+</style>
+
+<style name="InvPopupButton" parent="@style/MainScreenButton">
+    <item name="android:background">@color/ButtonTextColor</item>
+    <item name="android:textColor">@color/blue</item>
+</style>
+
+    <style name="Pacman">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowFullscreen">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="28" height="31" tilewidth="8" tileheight="8" nextobjectid="1">
+ <tileset firstgid="1" name="maptileset" tilewidth="8" tileheight="8">
+  <image source="maptileset.png" trans="ffffff" width="88" height="40"/>
+  <tile id="4">
+   <properties>
+    <property name="Empty" value="true"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="Coins" value="1"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="Coins" value="10"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Walls" width="28" height="31">
+  <data encoding="base64" compression="zlib">
+   eJzlVlFugzAMzdZf4Jfkr8pJOApHyVE4CkfhKHPmpDPGHg6tVE2L9ET6SmL8bMfpnHPeuaUFH7AGkGB+b0GHa5pHQKTWdZ7YG3CPJQPmC+coT+0Bdw8Eg8BXjtoL++9fOcf5ag+eE3vnwAfBHnzDHAqGsi/lOA/YynyC/7YKia+cvxi/q8MSPy2WWsys8ZP0LHFa+f8RfgMS1yughtVes57UnsAngZ8knuoJNTh7Bpr34MdqrYe49y/X+EbRFT+F73j4ERvyM+IzVV905XR7kp7aoHo+a69Hfr7B8xORbhj/rSc1fmZPOo+Zbmt5T/XTl7Mka0t1ls7sBp9P7Rn3UfOT1rvRv1298/z0hvwk8ZuZ7g+NeqHe/1p+Ws5Pi73OHXNUyk/L+XmWn//pPjEQraQe1Nrfcyyr5r/1o9ac1IbUm7K9EfsNzbFdTl7t76z3fq8FW9PIfKY5+Wx/p3vmdaP7qTVFk5f3dyk/KyKiqb9HnIt6a/clDZb8lPDO+6d0XzLi0GvOkO9LX/0c9+k=
+  </data>
+ </layer>
+ <layer name="Collectables" width="28" height="31">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA/4CcRU0MfNjfgchsparCJSdHBPikC8rT0H6nxQC4mxT2EAKXm0do+UtI9qeLo8oTciwx0cbCJ0TtY7dMlElPTPkJgKNqHLazw2QfDQ8V/o/YNDfuGe3tiINovlIYVoTAn1EaiVn1LbFqlpX30rt9JyZ+0Sp+U2EeMPnrggQAAxHsUkQ==
+  </data>
+ </layer>
+</map>

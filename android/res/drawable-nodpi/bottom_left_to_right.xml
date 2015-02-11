@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list
+    android:id="@+id/bottom_anim_left_to_right"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">>
+    <item android:drawable="@drawable/bottom_anim_1" android:duration="50" />
+    <item android:drawable="@drawable/bottom_anim_2" android:duration="50" />
+    <item android:drawable="@drawable/bottom_anim_3" android:duration="50" />
+    <item android:drawable="@drawable/bottom_anim_4" android:duration="50" />
+</animation-list>

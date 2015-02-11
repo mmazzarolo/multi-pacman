@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:id="@+id/screen_main"
+    style="@style/MainScreen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient_bg">
+
+
+    <!-- BACKGROUND IMAGE -->
+    <!--<ImageView-->
+        <!--android:id="@+id/bg"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:scaleType="matrix"-->
+        <!--android:src="@drawable/bg"-->
+        <!--tools:ignore="ContentDescription"-->
+        <!--/>-->
+
+
+    <!-- BACKGROUND IMAGE -->
+    <!--<ImageView-->
+        <!--android:id="@+id/bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:scaleType="matrix"-->
+        <!--android:src="@drawable/bg"-->
+        <!--tools:ignore="ContentDescription"-->
+        <!--/>-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/p_logo"
+        tools:ignore="ContentDescription"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_list_btn"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.15">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.6">
+
+    <!-- BUTTON: SINGLE PLAYER -->
+
+        <Button
+            android:id="@+id/btn_single_player"
+            android:text="@string/single_player"
+            style="@style/MainScreenButton"
+            android:layout_width="fill_parent"
+            />
+
+    <!-- BUTTON: QUICK GAME -->
+    <Button
+        android:id="@+id/btn_quick_game"
+        android:text="@string/quick_game"
+        style="@style/MainScreenButton"
+        android:layout_below="@+id/btn_single_player"
+        android:layout_width="fill_parent"
+        />
+
+
+    <!-- BUTTON: SEE INVITATIONS -->
+    <Button
+        android:id="@+id/btn_see_invitations"
+        android:text="@string/see_invitations"
+        style="@style/MainScreenButton"
+        android:layout_below="@+id/btn_quick_game"
+        android:layout_width="fill_parent"
+        />
+
+    <!-- BUTTON: INVITE PLAYERS -->
+    <Button
+        android:id="@+id/btn_invite_players"
+        android:text="@string/invite_players"
+        style="@style/MainScreenButton"
+        android:layout_below="@+id/btn_see_invitations"
+        android:layout_width="fill_parent"
+        />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.15">
+    </RelativeLayout>
+   </LinearLayout>
+
+    <!-- BUTTON: SIGN OUT -->
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:text="@string/sign_out"
+        style="@style/SignOutButton"
+        android:layout_below="@+id/layout_list_btn"
+        />
+
+    <!-- BUTTON: SIGN IN -->
+    <Button
+        android:id="@+id/btn_sign_in"
+        style="@style/SignInButton"
+        android:layout_below="@+id/layout_list_btn"
+        android:background="@drawable/red_sign_in_long_hover"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bottom_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:ignore="ContentDescription"
+        />
+
+</RelativeLayout>
